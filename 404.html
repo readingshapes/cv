@@ -10,9 +10,8 @@
             line-height: 1.2;
             margin: 0;
         }
-
         html {
-            color: #888;
+            color: #D96F32;
             display: table;
             font-family: sans-serif;
             height: 100%;
@@ -21,6 +20,8 @@
         }
 
         body {
+            background-image: url("img/404img.png");
+            background-repeat: no-repeat;
             display: table-cell;
             vertical-align: middle;
             margin: 2em auto;
@@ -28,14 +29,40 @@
 
         h1 {
             color: #555;
-            font-size: 2em;
-            font-weight: 400;
+            font-size: 5em;
+            font-weight: 600;
         }
 
         p {
             margin: 0 auto;
-            width: 280px;
+            width: 480px;
+            font-size: 2em;
+            font-weight: 350;
         }
+                
+        /* unvisited link */
+        a:link {
+          color: #D96F32;
+          text-decoration: none;
+        }
+
+        /* visited link */
+        a:visited {
+          color: #ac5320;
+          text-decoration: none;
+        }
+
+        /* mouse over link */
+        a:hover {
+          color: #D96F32;
+          text-decoration: underline;
+        }
+
+        /* selected link */
+        a:active {
+          color: #D96F32;
+          text-decoration: underline;
+        } 
 
         @media only screen and (max-width: 280px) {
 
@@ -49,12 +76,12 @@
             }
 
         }
-
+        
     </style>
 </head>
 <body>
     <h1>Page Not Found</h1>
-    <p>Sorry, but the page you were trying to view does not exist.</p>
+    <p>Sorry, looks like that link doesn't work. Would you like to <a href="file:///C|/Users/karis/OneDrive/Documents/html 5 boilerplate/html5-boilerplate-5.1.0/src/readingshapes.com">go back?</a></p>
 </body>
 </html>
 <!-- IE needs 512+ bytes: http://blogs.msdn.com/b/ieinternals/archive/2010/08/19/http-error-pages-in-internet-explorer.aspx -->
