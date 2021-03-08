@@ -1,13 +1,12 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <title>Visual CV</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
-<!--<link rel="stylesheet" href="css/normalize.css">-->
+<link rel="stylesheet" href="css/normalize.css">
 <link rel="stylesheet" href="css/skeleton.css">
+<script>var __adobewebfontsappname__="dreamweaver"</script><script src="http://use.edgefonts.net/montserrat:n4:default;source-sans-pro:n2:default.js" type="text/javascript"></script>
 <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 <style>
 body {
@@ -15,21 +14,25 @@ body {
     height: auto;
     justify-content: center;
 }
+body p {
+    font-family: sans-serif;
+    color: rgba(146,146,146,1.00);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.8;
+    overflow-y: auto;
+}
 #tots {
     width: 30em;
     overflow-wrap: normal;
     line-height: 1.2;
+    font-family: 'Montserrat', sans-serif;
+    color: rgba(146,146,146,1.00);
+    font-size: 14px;
 }
 </style>
 </head>
 <body>
-<h1>CURRICULUM VITAE</h1>
-<h2> A Visual Timeline of My Top Skills</h2>
-<div class="container">
-  <p>While I have been fortunate to have had a wide array of professional experiences in my career, it has made telling my story a bit of a challenge.</p>
-  <p>In pursuing opportunities that seemed challenging and exciting, I hopped across multiple knowledge domains. What, I wondered, could possibly unite coffee, imports, workforce planning, safety, fundraising, teaching, and student outcomes?</p>
-  <p>This is what I came up with. These skills are both what I have most consistently developed over time, and are the most important to me. What I have lately discovered, is that I am most passionate about applying all of these skills specifically to the domain of data visualization.</p>
-</div>
 <p><small><br/>
   <br/>
   Hover over a location to find out what I did there.</small></p>
@@ -1233,65 +1236,69 @@ body {
 <script src="https://unpkg.com/@popperjs/core@2"></script> 
 <script src="https://unpkg.com/tippy.js@6"></script>
 <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/themes/light.css"/>
+</body>
 <script>
 tippy.setDefaultProps ({
     delay: 40,
     theme: 'light',
     allowHTML: true,
-        aria: {
-            // `null` when interactive: true, otherwise "describedby"
-            content: 'auto',
-            // matches `interactive` boolean
-            expanded: 'auto',
-        },
-        //interactive: true,
-        maxWidth: 'none',
+    aria: {
+        // `null` when interactive: true, otherwise "describedby"
+        content: 'auto',
+        // matches `interactive` boolean
+        expanded: 'auto',
+    },
+    //interactive: true,
+    maxWidth: 'none',
 });
-    </script> 
+tippy.content ({
+    font: 'sans-serif',
+    color: rgba(146,146,146,1.00),
+})
+    </script>
 <script>
     tippy('#mgmt_1_peets_dot', {
-        content: '<small><b>Peet\'s</b><br/>1999 - 2001<br/>Store Manager & Divisional Trainer</small><br/><br/><p id="tots"><small>Early in my career I discovered a passion for watching people develop and gain confidence in new skills.</small></p>',
+        content: '<p id="tots"><small><b>Peet\'s</b><br/>1999 - 2001<br/>Store Manager & Divisional Trainer</small><br/><br/><small>Early in my career I discovered a passion for watching people develop and gain confidence in new skills.</small></p>',
     });
- <!--  </script> 
+ <!--  </script>
 <script>-->
     tippy('#research_1_numi_dot', {
-        content: '<small><b>Numi</b><br/>2004 - 2006<br/>Logistics and Operations</small><br/><br/><p id="tots"><small>Coordinated imports and in-house production for a start-up tea company. Developed international vendor relationships, and managed certifications for Organic, Fair Trade, and Kosher and Halal status.</small></p>',
+        content: '<p id="tots"><small><b>Numi</b><br/>2004 - 2006<br/>Logistics and Operations</small><br/><br/><small>Coordinated imports and in-house production for a start-up tea company. Developed international vendor relationships, and managed certifications for Organic, Fair Trade, and Kosher and Halal status.</small></p>',
     });
-<!--   </script> 
+<!--   </script>
 <script>-->
     tippy('#analysis_5_ucb_dot', {
-        content: '<small><b>UC Berkeley</b><br/>2010 - Present<br/><br/><b>Residential and Student Services - Housing Operations</b><br/></small><br/><p id="tots"><small>My first position on staff was as the analyst for the Director of Housing Operations. In that role, I assessed productivity for trades staff, performed analysis of residential square footage and custodial staff, compiled deferred maintenance forecasts on the University\'s housing stock, and analyzed the effect of workplace injuries on budget and productivity.</small></p>',
+        content: '<p id="tots"><small><b>UC Berkeley</b><br/>2010 - Present<br/><b>Residential and Student Services - Housing Operations</b><br/></small><br/><small>My first position on staff was as the analyst for the Director of Housing Operations. In that role, I assessed productivity for trades staff, performed analysis of residential square footage and custodial staff, compiled deferred maintenance forecasts on the University\'s housing stock, and analyzed the effect of workplace injuries on budget and productivity.</small></p>',
     });
- <!-- </script> 
+ <!-- </script>
 <script>-->
     tippy('#project_3_sa_dot', {
-        content: '<small><b>Student Affairs Business Operations</b><br/><br/></small><p id="tots"><small>As my position was moved to the divisional level, the focus shifted more to safety and emergency response. This was a fascinating detour in my career trajectory, where I coordinated complex projects, such as the development and maintenance of the Housing and Dining Emergency Response plan, along with creating a system to ensure OSHA training compliance for thousands of frontline staff.</small></p>',
+        content: '<p id="tots"><small><b>Student Affairs Business Operations</b><br/><br/></small><small>As my position was moved to the divisional level, the focus shifted more to safety and emergency response. This was a fascinating detour in my career trajectory, where I coordinated complex projects, such as the development and maintenance of the Housing and Dining Emergency Response plan, along with creating a system to ensure OSHA training compliance for thousands of frontline staff.</small></p>',
     });
-  <!-- </script> 
+  <!-- </script>
 <script>-->
     tippy('#speaking_6_can_dot', {
-      content: '<small><b>Cal Assessment Network</b><br/><br/></small><p id="tots"><small>It was around this point that I was asked to give a presentation on Data Visualization for an all-staff community of practice. It was well attended, and I have subsequently presented to the group every year since.</small></p>',
+      content: '<p id="tots"><small><b>Cal Assessment Network</b><br/><br/></small><small>It was around this point that I was asked to give a presentation on Data Visualization for an all-staff community of practice. It was well attended, and I have subsequently presented to the group every year since.</small></p>',
     });
-    </script> 
+    </script>
 <script>
     tippy('#teaching_2_dlab_dot', {
-        content: '<small><b>D-Lab</b><br/><br/></small><p id="tots"><small>The D-Lab began as a technical resource for Social Science researchers needing to master increasingly complex software to do their work, and has grown into a resource for all of campus and beyond. Their motto, \'It\'s OK not to know\' happens to also be my motto.<br/><br/>They asked me to do introductory workshops on Data Visualization and Tableau, and I have been delivering various iterations of these workshops at least twice a year. Everyone is welcome to attend for free.</small></p>',
+        content: '<p id="tots"><small><b>D-Lab</b><br/><br/></small><small>The D-Lab began as a technical resource for Social Science researchers needing to master increasingly complex software to do their work, and has grown into a resource for all of campus and beyond. Their motto, \'It\'s OK not to know\' happens to also be my motto.<br/><br/>They asked me to do introductory workshops on Data Visualization and Tableau, and I have been delivering various iterations of these workshops at least twice a year. Everyone is welcome to attend for free.</small></p>',
     });
-    <!--</script> 
+    <!--</script>
 <script>-->
     tippy('#research_2_opa_dot', {
         content: '<small><b>Office of Planning and Analysis</b><br/><br/></small><p id="tots"><small>In my latest campus role, I am part of the team that develops and maintains statistics around student demographics and outcomes. Specifically focused on Undergraduates, we measure time to degree, retention, academic performance, and the intersection of demographics with all of those things. <br/><br/>Among the many places we report out on these metrics, is a public facing web site, composed of dashboards made in Tableau and d3. It is my great joy to create and maintain those visualizations.</small></p>',
     });
-    </script> 
+    </script>
 <script>
     tippy('#volunteerism_-_ics_dot', {
-    content: '<small><b>Integrated Community Services of Marin</b><br/><br/></small><p id="tots"><small>While I have consistently volunteered for organizations whose work I believed in, ICS is the first board I served on.<br/><br/>ICS\' mission is to partner with people with any type of disability on their path to independence. They support career building, independent living, and community integration for clients across Marin County.<br/><br/>In my time serving on the board, I have re-written its by-laws, developed sub-committees, assisted in reogranizing the budget and chart of accounts, as well as serving a term as Board President.</small></p>',
-    });
-    <!--</script> 
-<script>-->
-    tippy('#leadership_2_cdvn_dot', {
-        content: '<small><b>Cal Data Visualization Network</b><br/><br/></small><p id="tots"><small>CDVN is a community of practice for Cal staff who are dedicated to learning good data analysis and visualization practices. Our goal is to share knowledge that will empower staff to further the university\'s mission and broaden their own skill sets.<br/><br/>As founder and chair, I\'ve had the privilege to see volunteers take on leadership roles in this community and grow their strengths. We have expanded the network and created new leaders in technical areas through our content-specific Mastermind groups (informal learning opportunities focused on mastering SQL, Excel, and Tableau).</small></p>',
+    content: '<p id="tots"><small><b>Integrated Community Services of Marin</b><br/><br/></small><small>While I have consistently volunteered for organizations whose work I believed in, ICS is the first board I served on.<br/><br/>ICS\' mission is to partner with people with any type of disability on their path to independence. They support career building, independent living, and community integration for clients across Marin County.<br/><br/>In my time serving on the board, I have re-written its by-laws, developed sub-committees, assisted in reogranizing the budget and chart of accounts, as well as serving a term as Board President.</small></p>',
     });
     </script>
-</body>
+<script>
+    tippy('#leadership_2_cdvn_dot', {
+        content: '<p id="tots"><small><b>Cal Data Visualization Network</b><br/><br/></small><small>CDVN is a community of practice for Cal staff who are dedicated to learning good data analysis and visualization practices. Our goal is to share knowledge that will empower staff to further the university\'s mission and broaden their own skill sets.<br/><br/>As founder and chair, I\'ve had the privilege to see volunteers take on leadership roles in this community and grow their strengths. We have expanded the network and created new leaders in technical areas through our content-specific Mastermind groups (informal learning opportunities focused on mastering SQL, Excel, and Tableau).</small></p>',
+    });
+    </script>
 </html>

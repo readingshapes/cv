@@ -20,6 +20,11 @@ div {
   align-items: left;
   float: left;
 }
+div2 {
+  display: block;
+  align-items: left;
+  float: left;
+}
 
 header .profileLogo .logoPlaceholder {
 	background-color: #ffffff;
@@ -54,6 +59,17 @@ header .profileHeader h1 {
     text-align: right;
     /*padding-left: 26%;*/
 }
+header2 .profileHeader h1 {
+	font-family: 'Montserrat', sans-serif;
+	color: rgba(146,146,146,1.00);
+	font-size: 40px;
+	font-weight: 800;
+	line-height: 20px;
+	margin-left: auto;
+    vertical-align: top;
+    text-align: left;
+    /*padding-left: 26%;*/
+}
 header .profileHeader h3 {
 	font-family: sans-serif;
 	color: rgba(146,146,146,1.00);
@@ -64,12 +80,30 @@ header .profileHeader h3 {
     text-align: right;
     /*padding-left: 26%;*/
 }
+header2 .profileHeader h3 {
+	font-family: sans-serif;
+	color: rgba(146,146,146,1.00);
+	font-size: 30px;
+	font-weight: 650;
+	line-height: 20px;
+	margin-left: auto;
+    text-align: left;
+    /*padding-left: 26%;*/
+}
 hr {
 	background-color: rgba(208,207,207,1.00);
 	height: 1px;
     margin-left: auto;
 }
 header .profileHeader p {
+	font-family: sans-serif;
+	color: rgba(146,146,146,1.00);
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.8;
+	overflow-y: auto;
+}
+header2 .profileHeader p {
 	font-family: sans-serif;
 	color: rgba(146,146,146,1.00);
 	font-size: 14px;
@@ -405,7 +439,7 @@ header .socialNetworkNavBar .socialNetworkNav {
 }
 /* Footer */
 footer .footerDisclaimer {
-	float: left;
+	float: right;
 	margin-left: 3%;
 	font-family: sans-serif;
 }
