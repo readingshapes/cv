@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1100 900" style="enable-background:new 0 0 1100 900;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:#2469A6;}
+	.st2{fill:#AAA091;}
+	.st3{fill:#A4921E;}
+	.st4{fill:#F2DC6B;}
+	.st5{fill:#A4CEF3;}
+	.st6{fill:#D7C1AA;}
+	.st7{fill:#D96F32;}
+	.st8{fill:#44A5BA;}
+	.st9{fill:#2F3132;}
+	.st10{fill:none;stroke:#000000;}
+	.st11{font-family:'ArialMT';}
+	.st12{font-size:10px;}
+	.st13{display:none;fill:#7B7B7B;enable-background:new    ;}
+	.st14{font-family:'Arial-BoldMT';}
+	.st15{font-size:12px;}
+</style>
+<rect id="backgorund" x="25" y="150" class="st0" width="1050" height="600"/>
+<g id="viz">
+	<g transform="translate(0,0)">
+		<g transform="translate(10,20)">
+			<g>
+				<path class="st1" d="M25,176.9c273.6,0,273.6,533.1,547.2,533.1c15.2,0,15.2,0,30.5,0c151.2,0,151.2,0,302.4,0l0,0
+					c-151.2,0-151.2,0-302.4,0c-15.2,0-15.2,0-30.5,0C298.6,710,298.6,176.9,25,176.9z"/>
+				<path class="st2" d="M25,671.4c273.6,0,273.6-143.5,547.2-143.5c15.2,0,15.2,0,30.5,0c151.2,0,151.2,156.6,302.4,156.6V710
+					c-151.2,0-151.2-126.1-302.4-126.1c-15.2,0-15.2,0-30.5,0C298.6,583.9,298.6,707,25,707V671.4z"/>
+				<path class="st3" d="M25,642.9c273.6,0,273.6-148.5,547.2-148.5c15.2,0,15.2,0,30.5,0c151.2,0,151.2-181.2,302.4-181.2v76.4
+					c-151.2,0-151.2,135.4-302.4,135.4c-15.2,0-15.2,0-30.5,0c-273.6,0-273.6,143.5-547.2,143.5V642.9z"/>
+				<path class="st4" d="M25,609.4c273.6,0,273.6-168.9,547.2-168.9c15.2,0,15.2,0,30.5,0c151.2,0,151.2-47.9,302.4-47.9v50.9
+					c-151.2,0-151.2,47.9-302.4,47.9c-15.2,0-15.2,0-30.5,0c-273.6,0-273.6,148.5-547.2,148.5V609.4z"/>
+				<path class="st5" d="M25,465.9c273.6,0,273.6-286,547.2-286c15.2,0,15.2,0,30.5,0C753.8,179.9,753.8,710,905,710l0,0
+					c-151.2,0-151.2-377.4-302.4-377.4c-15.2,0-15.2,0-30.5,0c-273.6,0-273.6,224.9-547.2,224.9V465.9z"/>
+				<path class="st6" d="M25,335.6c273.6,0,273.6,251.3,547.2,251.3c15.2,0,15.2,0,30.5,0c151.2,0,151.2-404,302.4-404v127.3
+					c-151.2,0-151.2,317.5-302.4,317.5c-15.2,0-15.2,0-30.5,0c-273.6,0-273.6-164.7-547.2-164.7V335.6z"/>
+				<path class="st7" d="M25,179.9c273.6,0,273.6,155.7,547.2,155.7c15.2,0,15.2,0,30.5,0c151.2,0,151.2,110.8,302.4,110.8v76.4
+					c-151.2,0-151.2-85.4-302.4-85.4c-15.2,0-15.2,0-30.5,0c-273.6,0-273.6-104.8-547.2-104.8V179.9z"/>
+				<path class="st8" d="M25,560.5c273.6,0,273.6,70.1,547.2,70.1c15.2,0,15.2,0,30.5,0c151.2,0,151.2-104.8,302.4-104.8v101.8
+					c-151.2,0-151.2,53.9-302.4,53.9c-15.2,0-15.2,0-30.5,0c-273.6,0-273.6-75.2-547.2-75.2V560.5z"/>
+				<path class="st9" d="M25,710c273.6,0,273.6-25.5,547.2-25.5c15.2,0,15.2,0,30.5,0c151.2,0,151.2-53.9,302.4-53.9v50.9
+					c-151.2,0-151.2,28.5-302.4,28.5c-15.2,0-15.2,0-30.5,0C298.6,710,298.6,710,25,710z"/>
+			</g>
+			<g id="xAxis" transform="translate(0,560)">
+				<path class="st10" d="M25.5,150.5h880"/>
+				<g transform="translate(93.2138206569991,0)">
+					<line class="st10" x1="25" y1="150" x2="25" y2="156"/>
+					<text transform="matrix(1 0 0 1 14.2481 166.1)" class="st11 st12">2011</text>
+				</g>
+				<g transform="translate(188.27153003847292,0)">
+					<line class="st10" x1="25" y1="150" x2="25" y2="156"/>
+					<text transform="matrix(1 0 0 1 13.8769 166.1)" class="st11 st12">2012</text>
+				</g>
+				<g transform="translate(283.5896715004439,0)">
+					<line class="st10" x1="25" y1="150" x2="25" y2="156"/>
+					<text transform="matrix(1 0 0 1 13.8769 166.1)" class="st11 st12">2013</text>
+				</g>
+				<g transform="translate(378.64738088191774,0)">
+					<line class="st10" x1="25" y1="150" x2="25" y2="156"/>
+					<text transform="matrix(1 0 0 1 13.8769 166.1)" class="st11 st12">2014</text>
+				</g>
+				<g transform="translate(473.7050902633916,0)">
+					<line class="st10" x1="25" y1="150" x2="25" y2="156"/>
+					<text transform="matrix(1 0 0 1 13.877 166.1)" class="st11 st12">2015</text>
+				</g>
+				<g transform="translate(568.7627996448654,0)">
+					<line class="st10" x1="25" y1="150" x2="25" y2="156"/>
+					<text transform="matrix(1 0 0 1 13.877 166.1)" class="st11 st12">2016</text>
+				</g>
+				<g transform="translate(664.0809411068363,0)">
+					<line class="st10" x1="25" y1="150" x2="25" y2="156"/>
+					<text transform="matrix(1 0 0 1 13.877 166.1)" class="st11 st12">2017</text>
+				</g>
+				<g transform="translate(759.1386504883102,0)">
+					<line class="st10" x1="25" y1="150" x2="25" y2="156"/>
+					<text transform="matrix(1 0 0 1 13.877 166.1)" class="st11 st12">2018</text>
+				</g>
+				<g transform="translate(854.1963598697839,0)">
+					<line class="st10" x1="25" y1="150" x2="25" y2="156"/>
+					<text transform="matrix(1 0 0 1 13.8769 166.1)" class="st11 st12">2019</text>
+				</g>
+			</g>
+			<text transform="matrix(1 0 0 1 848.3164 706)" class="st13 st14 st15">Start.Date</text>
+			<text transform="matrix(1 0 0 1 29 160.2949)" class="st13 st14 st15">Percentage</text>
+		</g>
+	</g>
+</g>
+<g id="legend" transform="translate(900,20)">
+	<g transform="translate(5,0)">
+		<g transform="translate(0,0)">
+			<g transform="translate(0,15.399999618530273)">
+				<g transform="translate(0, 0)">
+					<rect x="25" y="150" class="st7" width="15" height="15"/>
+					<text transform="matrix(1 0 0 1 45 162.5)" class="st11 st12">Analysis</text>
+				</g>
+				<g transform="translate(0, 20.399999618530273)">
+					<rect x="25" y="150" class="st9" width="15" height="15"/>
+					<text transform="matrix(1 0 0 1 45 162.5)" class="st11 st12">Consultancy</text>
+				</g>
+				<g transform="translate(0, 40.79999923706055)">
+					<rect x="25" y="150" class="st3" width="15" height="15"/>
+					<text transform="matrix(1 0 0 1 45 162.5)" class="st11 st12">Leadership</text>
+				</g>
+				<g transform="translate(0, 61.19999885559082)">
+					<rect x="25" y="150" class="st1" width="15" height="15"/>
+					<text transform="matrix(1 0 0 1 45 162.5)" class="st11 st12">People</text>
+					<text transform="matrix(1 0 0 1 45 174.5)" class="st11 st12">Management</text>
+				</g>
+				<g transform="translate(0, 97.19999885559082)">
+					<rect x="25" y="150" class="st5" width="15" height="15"/>
+					<text transform="matrix(1 0 0 1 45 162.5)" class="st11 st12">Project</text>
+					<text transform="matrix(1 0 0 1 45 174.5)" class="st11 st12">Management</text>
+				</g>
+				<g transform="translate(0, 133.19999885559082)">
+					<rect x="25" y="150" class="st2" width="15" height="15"/>
+					<text transform="matrix(1 0 0 1 45 162.5)" class="st11 st12">Public Speaking</text>
+				</g>
+				<g transform="translate(0, 153.5999984741211)">
+					<rect x="25" y="150" class="st6" width="15" height="15"/>
+					<text transform="matrix(1 0 0 1 45 162.5)" class="st11 st12">Research</text>
+				</g>
+				<g transform="translate(0, 173.99999809265137)">
+					<rect x="25" y="150" class="st4" width="15" height="15"/>
+					<text transform="matrix(1 0 0 1 45 162.5)" class="st11 st12">Teaching</text>
+				</g>
+				<g transform="translate(0, 194.39999771118164)">
+					<rect x="25" y="150" class="st8" width="15" height="15"/>
+					<text transform="matrix(1 0 0 1 45 162.5)" class="st11 st12">Volunteerism</text>
+				</g>
+			</g>
+			<text transform="matrix(1 0 0 1 25 150)" class="st14 st15">Colors</text>
+		</g>
+	</g>
+</g>
+</svg>

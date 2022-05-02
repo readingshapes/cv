@@ -1,0 +1,210 @@
+/* css variables*/ 
+/*:root {
+  --primary-color: #432E30;
+  --primary-color-light: #8E7474;
+  --accent-color: #FE6A6B;
+  --accent-color-light: #FFE4E4;
+  --accent-color-dark: #B94B4C;
+  --white-color: #FFFFFF;
+  --light-gray-color: #C6CBD1;
+  --medium-gray-color: #959DA5;
+  --dark-gray-color: #444D56;
+  --bg-color: #FFFFFF;
+  --code-bg-color: #F0E8E8;
+}*/
+
+/*.gallery img[alt*="art"]
+.id [data-value*="sa"]
+
+#container:hover + #cube { background-color: yellow; }
+*/
+
+/*#container {
+  width: 800px;
+  margin: 0 auto;
+}*/
+
+.id[data-value^="office"]:hover + .id[data-value^="sa"] {
+  opacity: .40;
+}
+
+html, body {
+  padding: 1;
+  /*margin: 0;*/
+  margin-left: 3rem;
+  margin-right: 3rem;
+  /*font-family: 'Nunito Sans', sans-serif;*/
+  font-family: 'Comfortaa', cursive;
+}
+.description {
+  width: 95%;
+  margin: 5% auto;
+  font-weight: 500;
+  font-size: 1.118rem;
+  /*text-transform: uppercase;*/
+  text-align: center;
+  letter-spacing: 0.1ch;
+  line-height: 1.35rem;
+  padding-bottom: 1.25rem;
+  margin-bottom: 1.15rem;
+  margin-top: 1.5rem;
+  position: relative;
+  font-family: 'Comfortaa', cursive;
+}
+p {
+  font-weight: 300;
+  color: #4A4A4A;
+  /*padding: 10px;*/
+  /*margin: 10px;*/
+}
+.content {
+  display: flex;
+  flex: 1;
+  /*flex: 0 0 auto;*/
+  margin: 0 auto;
+  justify-content: center;
+  /*justify-content: space-between;*/
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  /*color: #333;*/
+  font-family: 'Comfortaa', cursive;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 300;
+}
+.card {
+  /*cursor: pointer;*/
+  /*width: calc(50% - 4rem);*/
+  /*width: 100%;*/
+  margin: 2rem;
+  position: relative;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: ffffff;
+  /*height: 50vh;
+	padding: 2rem;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;*/
+  overflow: visible;
+  border-radius: 3px;
+}
+img {
+  max-width: calc(95% - 1rem);
+  /*max-height: 100%;*/
+  object-fit: cover;
+  vertical-align: top;
+}
+a, a:hover {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* typography */
+.section__title {
+  color: var(--primary-color);
+}
+/* links */
+.link {
+  text-decoration: none;
+  transition: all 0.3s ease-out;
+}
+.link:hover {
+  color: var(--accent-color);
+}
+.link--dark {
+  color: var(--primary-color);
+}
+.link--light {
+  color: var(--accent-color);
+}
+/* nav specialized to landing page */
+.logo {
+  background: url('file://"RS_logo.svg"RS_logo.svg') no-repeat;
+  background-size: contain;
+  margin: 1rem 0 0 1rem;
+}
+nav {
+  background-color: var(--bg-color);
+}
+/* hero section */
+.hero {
+  text-align: center;
+  background-color: var(--bg-color);
+  padding: 2rem 0 2rem 0;
+}
+.hero__title {
+  font-weight: 800;
+  font-size: 1.918rem;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.1ch;
+  line-height: 1.85rem;
+  color: var(--primary-color);
+}
+.hero__description {
+  margin: -1rem auto 2rem auto;
+}
+/* feature section */
+.feature {
+  display: flex;
+  flex-wrap: wrap;
+}
+/*.feature__item {
+  max-width: calc(33% - 20px);
+  margin: 0 20px 0 0;
+}
+
+.feature__item .section__title {
+  margin-bottom: 0;
+}
+
+.feature__item p {
+  margin-top: 0.5rem;
+}*/
+@media (max-width: 750px) {
+  .hero__terminal {
+    width: 70%;
+  }
+  .tab__container > ul {
+    right: auto;
+    left: 0;
+    padding-left: 0;
+  }
+  .tab__container .code {
+    margin-top: 2rem;
+  }
+  .feature, .keybinding, .changelog__item {
+    flex-direction: column;
+  }
+  .feature__item {
+    max-width: 100%;
+    margin: 0;
+  }
+  .keybinding {
+    font-size: 0.8rem;
+  }
+  .content {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width:767px) {
+  .card {
+    width: 85vw;
+  }
+  .content {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 414px) {
+  .card {
+    height: 25vh;
+  }
+  .content {
+    flex-direction: column;
+  }
+}
