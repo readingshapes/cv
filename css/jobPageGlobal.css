@@ -1,40 +1,12 @@
 /* css variables*/ 
-/*:root {
-  --primary-color: #432E30;
-  --primary-color-light: #8E7474;
-  --accent-color: #FE6A6B;
-  --accent-color-light: #FFE4E4;
-  --accent-color-dark: #B94B4C;
-  --white-color: #FFFFFF;
-  --light-gray-color: #C6CBD1;
-  --medium-gray-color: #959DA5;
-  --dark-gray-color: #444D56;
-  --bg-color: #FFFFFF;
-  --code-bg-color: #F0E8E8;
-}*/
 
-/*.gallery img[alt*="art"]
-.id [data-value*="sa"]
-
-#container:hover + #cube { background-color: yellow; }
-*/
-
-/*#container {
-  width: 800px;
-  margin: 0 auto;
-}*/
-
-.id[data-value^="office"]:hover + .id[data-value^="sa"] {
-  opacity: .40;
-}
-
-html, body {
+html {
   padding: 1;
-  /*margin: 0;*/
   margin-left: 3rem;
   margin-right: 3rem;
   /*font-family: 'Nunito Sans', sans-serif;*/
-  font-family: 'Comfortaa', cursive;
+  /*font-family: 'Comfortaa', cursive;*/
+  font-family: 'Raleway', sans-serif;
 }
 .description {
   width: 95%;
@@ -42,20 +14,49 @@ html, body {
   font-weight: 500;
   font-size: 1.118rem;
   /*text-transform: uppercase;*/
-  text-align: center;
+  text-align: left;
   letter-spacing: 0.1ch;
   line-height: 1.35rem;
   padding-bottom: 1.25rem;
   margin-bottom: 1.15rem;
   margin-top: 1.5rem;
   position: relative;
-  font-family: 'Comfortaa', cursive;
+  /*font-family: 'Comfortaa', cursive;*/
 }
+.description-jobpage {
+  width: 95%;
+  /*margin: 5% auto;*/
+  margin-left: 6rem;
+  margin-right: 6rem;
+  font-weight: 500;
+  font-size: 1.118rem;
+  /*text-transform: uppercase;*/
+  text-align: left;
+  letter-spacing: 0.1ch;
+  line-height: 1.35rem;
+  padding-bottom: 1.25rem;
+  margin-bottom: 1.15rem;
+  margin-top: 1.5rem;
+  position: relative;
+  /*font-family: 'Comfortaa', cursive;*/
+}
+.heading-jobpage {
+	width: 100%;
+	/*margin-left: 1rem;
+	font-weight: 800;*/
+	font-size: 1.918rem;
+	/*text-transform: uppercase;*/
+	letter-spacing: 0.1ch;
+	line-height: 1.25rem;
+	padding-bottom: 1.25rem;
+	/*margin-bottom: 1.15rem;*/
+	margin-top: 1.5rem;
+	position: relative;
+}
+
 p {
   font-weight: 300;
   color: #4A4A4A;
-  /*padding: 10px;*/
-  /*margin: 10px;*/
 }
 .content {
   display: flex;
@@ -68,8 +69,24 @@ p {
   flex-wrap: nowrap;
   flex-direction: row;
   /*color: #333;*/
-  font-family: 'Comfortaa', cursive;
+  /*font-family: 'Comfortaa', cursive;*/
   font-size: 14px;
+  line-height: 1.5;
+  font-weight: 300;
+}
+.content-jobpage {
+  display: flex;
+  flex: 1;
+  /*flex: 0 0 auto;*/
+  margin: 0 auto;
+  justify-content: center;
+  /*justify-content: space-between;*/
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  /*color: #333;*/
+  /*font-family: 'Comfortaa', cursive;*/
+  font-size: 16px;
   line-height: 1.5;
   font-weight: 300;
 }
@@ -90,10 +107,43 @@ p {
   overflow: visible;
   border-radius: 3px;
 }
+.container {
+	display: flex;
+	margin-left: 4rem;
+	margin-right: 4rem;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	max-width: 100%;
+	flex-direction: row;
+}
+.container-jobpage {
+	display: flex;
+	margin-left: 6rem;
+	margin-right: 6rem;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	max-width: 100%;
+	flex-direction: row;
+}
+li:not(:last-child) {
+    margin-bottom: 6px;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 300;
+    color: #4A4A4A;
+}
 img {
-  max-width: calc(95% - 1rem);
+  max-width: calc(98% - 1rem);
   /*max-height: 100%;*/
-  object-fit: cover;
+  object-fit: fill;
+  vertical-align: top;
+}
+.rsspimg {
+  max-width: calc(105%);
+  /*max-height: 100%;*/
+  object-fit: fill;
   vertical-align: top;
 }
 a, a:hover {
@@ -154,6 +204,7 @@ nav {
   display: flex;
   flex-wrap: wrap;
 }
+
 /*.feature__item {
   max-width: calc(33% - 20px);
   margin: 0 20px 0 0;
@@ -166,6 +217,7 @@ nav {
 .feature__item p {
   margin-top: 0.5rem;
 }*/
+
 @media (max-width: 750px) {
   .hero__terminal {
     width: 70%;
@@ -191,13 +243,18 @@ nav {
   .content {
     flex-direction: column;
   }
+.heading-jobpage {
+    line-height: 1.9rem;
 }
-@media screen and (max-width:767px) {
+@media screen and (max-width:800px) {
   .card {
     width: 85vw;
   }
   .content {
     flex-direction: column;
+  }
+  .heading-jobpage {
+  line-height: 1.9rem;
   }
 }
 @media screen and (max-width: 414px) {
@@ -206,5 +263,8 @@ nav {
   }
   .content {
     flex-direction: column;
+  }
+  .heading-jobpage {
+  line-height: 1.9rem;
   }
 }
