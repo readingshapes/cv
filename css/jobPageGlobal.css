@@ -121,11 +121,62 @@ img {
   object-fit: fill;
   vertical-align: top;
 }
+.tooltip {
+    display:inline-block;
+    position:relative;
+    text-align:right;
+}
+.tooltip .left {
+    min-width:130px; 
+    top:50%;
+    right:100%;
+    margin-right:20px;
+    transform:translate(0, -0%);
+    padding:10px 20px;
+    color:#444444;
+    background-color:#FFFFFF;
+    font-weight:normal;
+    font-size:13px;
+    border-radius:8px;
+    position:absolute;
+    z-index:99999999;
+    box-sizing:border-box;
+    border:1px solid transparent;box-shadow:0 1px 8px transparent;
+    visibility:hidden; opacity:0; transition:opacity 0.8s;
+}
+.tooltip:hover .left {
+    visibility:visible; opacity:1;
+}
+.tooltip .left i {
+    position:absolute;
+    top:0%;
+    left:100%;
+    margin-top:-0px;
+    width:0px;
+    height:0px;
+    overflow:hidden;
+}
+
+.tooltip .left i::after {
+    content:'';
+    position:absolute;
+    width:0px;
+    height:0px;
+    left:0;
+    top:50%;
+    transform:translate(-50%,-50%) rotate(-45deg);
+    background-color:#FFFFFF;
+    border:1px solid transparent;box-shadow:0 1px 8px transparent;
+}
 a:hover img.rsspimg {
     border: solid 1px #CCC;
     -moz-box-shadow: 1px 1px 5px #999;
     -webkit-box-shadow: 1px 1px 5px #999;
         box-shadow: 1px 1px 5px #999;
+}
+a, a:hover {
+  text-decoration: none;
+  color: var(--primary-color);
 }
 * {
   -webkit-box-sizing: border-box;
