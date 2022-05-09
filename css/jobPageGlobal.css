@@ -46,62 +46,62 @@ html {
 p {
   font-weight: 300;
   color: #4A4A4A;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: left;
 }
 .content {
   display: flex;
   flex: 1;
-  margin: 0 auto;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  font-size: 14px;
-  line-height: 1.5;
-  font-weight: 300;
-}
-.content-jobpage {
-  display: flex;
-  flex: 1;
-  /*flex: 0 0 auto;*/
-  margin: 0 auto;
-  justify-content: center;
-  align-items: center;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  align-content: center;
   flex-wrap: nowrap;
   flex-direction: row;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 300;
 }
-.card {
-  margin: 2rem;
-  position: relative;
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-color: ffffff;
-  overflow: visible;
-  border-radius: 3px;
+
+.content-index {
+  display: flex;
+  flex: 1;
+  margin-left: 6rem;
+  margin-right: 6rem;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 300;
 }
+
 .container {
 	display: flex;
-	margin-left: 4rem;
-	margin-right: 4rem;
+	margin-left: 2rem;
+	margin-right: 2rem;
 	justify-content: space-between;
 	align-items: center;
 	flex-wrap: wrap;
-	max-width: 100%;
+	max-width: 30vw;
 	flex-direction: row;
 }
-.container-jobpage {
+
+.container-svg {
 	display: flex;
 	margin-left: 6rem;
 	margin-right: 6rem;
 	justify-content: space-between;
 	align-items: center;
 	flex-wrap: wrap;
-	max-width: 100%;
+	max-width: 85vw;
 	flex-direction: row;
 }
+
 li:not(:last-child) {
     margin-bottom: 6px;
     font-size: 16px;
@@ -111,14 +111,12 @@ li:not(:last-child) {
 }
 img {
   max-width: calc(98% - 1rem);
-  /*max-height: 100%;*/
   object-fit: fill;
   vertical-align: top;
 }
 .rsspimg {
-  max-width: calc(105%);
-  /*max-height: 100%;*/
-  object-fit: fill;
+  max-width: 10vw;
+  object-fit: contain;
   vertical-align: top;
 }
 .tooltip {
@@ -182,10 +180,7 @@ a, a:hover {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* typography */
-.section__title {
-  color: var(--primary-color);
-}
+
 /* links */
 .link {
   text-decoration: none;
@@ -200,99 +195,177 @@ a, a:hover {
 .link--light {
   color: var(--accent-color);
 }
-/* nav specialized to landing page */
-.logo {
-  background: url('file://"RS_logo.svg"RS_logo.svg') no-repeat;
-  background-size: contain;
-  margin: 1rem 0 0 1rem;
-}
-nav {
-  background-color: var(--bg-color);
-}
-/* hero section */
-.hero {
-  text-align: center;
-  background-color: var(--bg-color);
-  padding: 2rem 0 2rem 0;
-}
-.hero__title {
-  font-weight: 800;
-  font-size: 1.918rem;
-  text-transform: uppercase;
-  text-align: center;
-  letter-spacing: 0.1ch;
-  line-height: 1.85rem;
-  color: var(--primary-color);
-}
-.hero__description {
-  margin: -1rem auto 2rem auto;
-}
-/* feature section */
-.feature {
-  display: flex;
-  flex-wrap: wrap;
-}
 
-/*.feature__item {
-  max-width: calc(33% - 20px);
-  margin: 0 20px 0 0;
-}
-
-.feature__item .section__title {
-  margin-bottom: 0;
-}
-
-.feature__item p {
-  margin-top: 0.5rem;
-}*/
+    
+/*media queries*/
+ 
 
 @media (max-width: 750px) {
-  .hero__terminal {
-    width: 70%;
-  }
-  .tab__container > ul {
-    right: auto;
-    left: 0;
-    padding-left: 0;
-  }
-  .tab__container .code {
-    margin-top: 2rem;
-  }
-  .feature, .keybinding, .changelog__item {
-    flex-direction: column;
-  }
-  .feature__item {
-    max-width: 100%;
-    margin: 0;
-  }
-  .keybinding {
-    font-size: 0.8rem;
-  }
   .content {
     flex-direction: column;
+    font-size: smaller;
   }
-.heading-jobpage {
+  .container-jobpage {
+    flex-direction: column;
+  }
+  .heading-jobpage {
     line-height: 1.9rem;
+  }
+  .description-jobpage {
+      font-size: smaller;
+  }
 }
+   
 @media screen and (max-width:800px) {
   .card {
     width: 85vw;
   }
   .content {
     flex-direction: column;
+    font-size: smaller;
+  }
+    .container-jobpage {
+    flex-direction: column;
   }
   .heading-jobpage {
   line-height: 1.9rem;
   }
+ .description-jobpage {
+      font-size: smaller;
+  }
 }
+    
 @media screen and (max-width: 414px) {
   .card {
     height: 25vh;
   }
   .content {
     flex-direction: column;
+    font-size: smaller;
+  }
+  .container-jobpage {
+    flex-direction: column;
   }
   .heading-jobpage {
   line-height: 1.9rem;
   }
+ .description-jobpage {
+      font-size: smaller;
+  }
+}
+    
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+	
+}
+
+/* iPad 3 (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (-webkit-min-device-pixel-ratio : 2),
+only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (min-resolution: 192dpi) { 
+
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+	
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+	
+}
+
+/* Retina displays ----------- */
+@media  only screen 
+and (-webkit-min-device-pixel-ratio : 2), 
+only screen 
+and (min-resolution: 192dpi) {
+
+}
+
+/* For non-retina based devices that have a smaller screen */
+@media only screen and (min-width: 320px) {
+
+}
+
+/* Retina enabled devices with smaller screen */
+@media  only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 320px), 
+only screen and ( -o-min-device-pixel-ratio: 2/1) and (min-width: 320px),  
+only screen and ( min-device-pixel-ratio: 2) and (min-width: 320px),  
+only screen and ( min-resolution: 192dpi) and (min-width: 320px),  
+only screen and ( min-resolution: 2dppx) and (min-width: 320px) {
+
+}
+
+/*Non- retina based devices with medium screen size */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Retina devices with medium screen size */
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px),  
+only screen and ( -o-min-device-pixel-ratio: 2/1) and (min-width: 768px),  
+only screen and ( min-device-pixel-ratio: 2) and (min-width: 768px),  
+only screen and ( min-resolution: 192dpi) and (min-width: 768px),  
+only screen and ( min-resolution: 2dppx) and (min-width: 768px) {
+
+}
+
+/* Non-retina devices with large screen sizes */
+@media only screen and (min-width: 1200px) {
+
+}
+
+/* Retina devices with large screen sizes */
+@media  only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px),  
+only screen and ( -o-min-device-pixel-ratio: 2/1) and (min-width: 1200px),  
+only screen and ( min-device-pixel-ratio: 2) and (min-width: 1200px),  
+only screen and ( min-resolution: 192dpi) and (min-width: 1200px),  
+only screen and ( min-resolution: 2dppx) and (min-width: 1200px) {
+
 }
