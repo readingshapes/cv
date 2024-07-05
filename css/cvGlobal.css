@@ -4,6 +4,10 @@ html {
   padding: 1;
   margin-left: 3rem;
   margin-right: 3rem;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  font-weight: 300;
+  color: #333;
   font-family: 'Raleway', sans-serif;
 }
 .description {
@@ -80,7 +84,7 @@ p {
   font-weight: 300;
 }
 
-.container {
+/* .container {
 	display: flex;
 	margin-left: 2rem;
 	margin-right: 2rem;
@@ -90,7 +94,7 @@ p {
 	max-width: 30vw;
 	flex-direction: row;
 }
-
+ */
 .container-svg {
 	display: flex;
 	margin-left: 4rem;

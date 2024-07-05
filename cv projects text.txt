@@ -1,0 +1,45 @@
+
+//Integrate projects
+Student Enrollment Projections
+Haas Data Warehouse
+CIO CPG dashboard 
+
+
+
+
+
+
+//Clean projects 
+MRET
+CIO CPG dashboard
+DP algorithm
+
+
+
+
+
+
+//Explore projects 
+Our Berkeley suite
+DP algorithm
+Haas NPS 
+
+
+
+
+
+
+//Interpret projects 
+science journal
+rssp safety reporting 
+dorm teardown
+
+
+
+
+
+
+//Explain projects 
+dlab 
+can 
+presidio

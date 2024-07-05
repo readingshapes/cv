@@ -1,0 +1,258 @@
+<!doctype html>
+<html>
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=yes"
+      charset="utf-8"
+    />
+    <title>timeline</title>
+    <!--    // Scss Document-->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
+
+      *,
+      *:before,
+      *:after {
+        box-sizing: border-box;
+      }
+      html {
+        font-size: 14px;
+        line-height: 1.15;
+        font-weight: 100;
+        margin-left: 3rem;
+        margin-right: 3rem;
+        color: #333;
+        font-family: "Comfortaa", sans;
+      }
+
+      /* h2 {
+	font-size: 18px;
+	line-height: 1.2;
+	font-weight: 300;
+	color: #333;
+	font-family: 'Comfortaa', cursive;
+}
+ h4 {
+	font-size: 14px;
+	line-height: 1.0;
+	font-weight: 200;
+	color: #333;
+	font-family: 'Comfortaa', cursive;
+}
+body {
+	margin: 2rem;
+	padding: 1px;
+	height: 100vh;
+	background-color: #ffffff;
+	background-attachment: local;
+}
+.content {
+	display: flex;
+	flex: 0 0 auto;
+	margin: 0 auto;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-direction: row;
+    color: #333;
+	font-family: 'Comfortaa', cursive;
+    font-size: 14px;
+	line-height: 1.2;
+	font-weight: 200;
+}
+.heading {
+	width: 100%;
+	margin-left: 1rem;
+	font-weight: 800;
+	font-size: 1.918rem;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 0.1ch;
+	line-height: 1.85rem;
+	padding-bottom: 1.25rem;
+	margin-bottom: 1.15rem;
+	margin-top: 1.5rem;
+	position: relative;
+    font-family: 'Comfortaa', cursive;
+}
+
+.description {
+	width: 100%;
+	margin-top: 0;
+	margin-left: 1rem;
+	margin-bottom: 3rem;
+	text-align: center;
+    font-family: 'Comfortaa', cursive;
+} */
+
+      .timeline {
+        --w: 600px; /* the break point*/
+
+        list-style: none;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(
+          auto-fit,
+          minmax(clamp(100%/3 + 0.1%, (var(--w) - 100vw) * 1000, 100%), 1fr)
+        );
+        grid-gap: 20px 45px;
+        position: relative;
+      }
+      .timeline:before {
+        content: "";
+        position: absolute;
+        inset: 0 calc(50% - 1px) 0;
+        background: repeating-linear-gradient(#0000 0 6px, #000 0 12px);
+      }
+      .timeline li {
+        border-radius: 15px;
+        padding: 10px;
+        background: #37b1d9;
+        color: #fff;
+        position: relative;
+      }
+      .timeline li * {
+        margin: 0;
+      }
+      .timeline li h4 {
+        font-size: 23px;
+        margin-bottom: 5px;
+      }
+      .timeline li:before {
+        content: "";
+        position: absolute;
+        top: 25px;
+        left: 100%;
+        width: 10px;
+        height: 15px;
+        background: inherit;
+        clip-path: polygon(0 0, 100% 50%, 0 100%);
+      }
+      .timeline li:after {
+        content: "";
+        position: absolute;
+        border-radius: 50%;
+        top: 27px;
+        width: 11px;
+        height: 11px;
+        left: calc(100% + 17px);
+        background: #000;
+      }
+      .timeline li:nth-child(even):before {
+        right: 100%;
+        left: auto;
+        bottom: 25px;
+        top: auto;
+        transform: scaleX(-1);
+      }
+      .timeline li:nth-child(even):after {
+        bottom: 27px;
+        top: auto;
+        right: calc(100% + 17px);
+        left: auto;
+      }
+
+      *:before,
+      *:after {
+        max-width: clamp(0px, (100vw - var(--w)) * 1000, 100%);
+        max-height: clamp(0px, (100vw - var(--w)) * 1000, 1000px);
+      }
+
+      .timeline li:nth-child(4n + 1) {
+        background: #37b1d9;
+      }
+      .timeline li:nth-child(4n + 2) {
+        background: #6cd937;
+      }
+      .timeline li:nth-child(4n + 3) {
+        background:
+          linear-gradient(#6cd937, #6cd937) 0 / max(0px, 100vw - var(--w)) 1px,
+          #37b1d9;
+      }
+      .timeline li:nth-child(4n + 4) {
+        background:
+          linear-gradient(#37b1d9, #37b1d9) 0 / max(0px, 100vw - var(--w)) 1px,
+          #6cd937;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="timeline">
+      <li>
+        <h4>2021</h4>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae
+          risus ut erat laoreet tempus. Curabitur vitae nunc fermentum lacus
+          auctor tempus id non ante. Vestibulum eu lacus vestibulum,
+        </p>
+      </li>
+      <li>
+        <h4>2020</h4>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae
+          risus ut erat laoreet tempus. Curabitur vitae nunc fermentum lacus
+          auctor tempus id non ante. Vestibulum eu lacus vestibulum,
+        </p>
+      </li>
+      <li>
+        <h4>2019</h4>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae
+          risus ut erat laoreet tempus. Curabitur vitae nunc fermentum lacus
+          auctor tempus id non ante. Vestibulum eu lacus vestibulum,
+        </p>
+      </li>
+      <li>
+        <h4>2018</h4>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae
+          risus ut erat laoreet tempus. Curabitur vitae nunc fermentum lacus
+          auctor tempus id non ante. Vestibulum eu lacus vestibulum,
+        </p>
+      </li>
+      <li>
+        <h4>2017</h4>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae
+          risus ut erat laoreet tempus. Curabitur vitae nunc fermentum lacus
+          auctor tempus id non ante. Vestibulum eu lacus vestibulum,
+        </p>
+      </li>
+      <li>
+        <h4>2016</h4>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae
+          risus ut erat laoreet tempus. Curabitur vitae nunc fermentum lacus
+          auctor tempus id non ante. Vestibulum eu lacus vestibulum,
+        </p>
+      </li>
+      <li>
+        <h4>2015</h4>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae
+          risus ut erat laoreet tempus. Curabitur vitae nunc fermentum lacus
+          auctor tempus id non ante. Vestibulum eu lacus vestibulum,
+        </p>
+      </li>
+      <li>
+        <h4>2014</h4>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae
+          risus ut erat laoreet tempus. Curabitur vitae nunc fermentum lacus
+          auctor tempus id non ante. Vestibulum eu lacus vestibulum,
+        </p>
+      </li>
+      <li>
+        <h4>2013</h4>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae
+          risus ut erat laoreet tempus. Curabitur vitae nunc fermentum lacus
+          auctor tempus id non ante. Vestibulum eu lacus vestibulum,
+        </p>
+      </li>
+    </ul>
+  </body>
+</html>
