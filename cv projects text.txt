@@ -5,17 +5,10 @@ Haas Data Warehouse
 CIO CPG dashboard 
 
 
-
-
-
-
 //Clean projects 
 MRET
 CIO CPG dashboard
 DP algorithm
-
-
-
 
 
 
@@ -26,16 +19,10 @@ Haas NPS
 
 
 
-
-
-
 //Interpret projects 
 science journal
 rssp safety reporting 
 dorm teardown
-
-
-
 
 
 
