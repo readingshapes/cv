@@ -14,7 +14,7 @@
         line-height: 1.5;
         font-weight: 300;
         color: #333;
-        font-family: "Comfortaa", sans-serif;
+        font-family: "Raleway", sans-serif;
       }
       body {
         margin: 0;
@@ -229,20 +229,30 @@
       rel="stylesheet"
       href="https://unpkg.com/tippy.js@6/themes/light.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/tippy.js@6/themes/retro.css"
+    />
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/tippy.js@6/animations/shift-away.css"
+/>
     <script>
       tippy.setDefaultProps({
         delay: 40,
         theme: "light",
         allowHTML: true,
-        placement: "right",
+        placement: "right-start",
         aria: {
           // `null` when interactive: true, otherwise "describedby"
           content: "auto",
           // matches `interactive` boolean
           expanded: "auto",
         },
-        //interactive: true,
+        // interactive: true,
+        trigger: 'click',
         maxWidth: "none",
+        animation: 'shift-away',
       });
       tippy.content({
         font: "sans-serif",
@@ -285,35 +295,40 @@
   tippy("g#_2020", {
     content:
       '<p class="tots"><small><b>Peet\'s</b><br/>1999 - 2001<br/>Store Manager & Divisional Trainer</small><br/><br/><small>Early in my career I discovered a passion for watching people develop and gain confidence in new skills.</small></p>',
-    placement: "left",
+    placement: "left-end",
+    delay: 900,
   });
 </script>
 <script>
   tippy("g#_2021", {
     content:
       '<p class="tots"><small><b>Numi</b><br/>2004 - 2006<br/>Logistics and Operations</small><br/><br/><small>Coordinated imports and in-house production for a start-up tea company. Developed international vendor relationships, and managed certifications for Organic, Fair Trade, and Kosher and Halal status.</small></p>',
-      placement: "left",
+      placement: "left-end",
+      delay: 900, // ms,
       });
 </script>
 <script>
   tippy("g#_2022", {
     content:
       '<p class="tots"><small><b>UC Berkeley</b><br/>2010 - Present<br/><b>Residential and Student Services - Housing Operations</b><br/></small><br/><small>My first position on staff was as the analyst for the Director of Housing Operations. In that role, I assessed productivity for trades staff, performed analysis of residential square footage and custodial staff, compiled deferred maintenance forecasts on the University\'s housing stock, and analyzed the effect of workplace injuries on budget and productivity.</small></p>',
-      placement: "left",
+      placement: "left-end",
+      delay: 900, // ms,
       });
 </script>
 <script>
   tippy("g#_2023", {
     content:
       '<p class="tots"><small><b>Student Affairs Business Operations</b><br/><br/></small><small>As my position was moved to the divisional level, the focus shifted more to safety and emergency response. This was a fascinating detour in my career trajectory, where I coordinated complex projects, such as the development and maintenance of the Housing and Dining Emergency Response plan, along with creating a system to ensure OSHA training compliance for thousands of frontline staff.</small></p>',
-      placement: "left",
+      placement: "left-end",
+      delay: 900, // ms,
       });
 </script>
 <script>
   tippy("g#_2024", {
     content:
       '<p class="tots"><small><b>Cal Assessment Network</b><br/><br/></small><small>It was around this point that I was asked to give a presentation on Data Visualization for an all-staff community of practice. It was well attended, and I have subsequently presented to the group every year since.</small></p>',
-      placement: "left",
+      placement: "left-end",
+      delay: 900, // ms,
       });
 </script>
   </body>

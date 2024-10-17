@@ -11,6 +11,8 @@
 - Haas School of Business at UC Berkeley
 - University of California Berkeley
 
+## format
+'<p class="tots"><small><b>Peet\'s</b><br/>1999 - 2001<br/>Store Manager & Divisional Trainer</small><br/><br/><small>Early in my career I discovered a passion for watching people develop and gain confidence in new skills.</small></p>',
 
 ## right side
 Supplier Data Accuracy Dashboard - 2024
