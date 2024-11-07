@@ -11,24 +11,82 @@
 - Haas School of Business at UC Berkeley
 - University of California Berkeley
 
-## format
-'<p class="tots"><small><b>Peet\'s</b><br/>1999 - 2001<br/>Store Manager & Divisional Trainer</small><br/><br/><small>Early in my career I discovered a passion for watching people develop and gain confidence in new skills.</small></p>',
-
 ## right side
-Supplier Data Accuracy Dashboard - 2024
-Communication and networking platform for community of practice - 2023
-Talent and Productivity forecast for the launch of new business practice - 2022
-Undergraduate Affordability Dashboard - loan and work contribution contextualization - 2021
 
+### repair dashboard
+'<p class="tots"><small><b>Supplier Data Accuracy Dashboard</b></br><br/>
+<b>Client:     </b>Multinational Technology Company<br/>
+<b>Brief:     </b>lorem ipsum<br/>
+<b>Result:     </b>lorem ipsum</small></p>',
+
+### dynamic library
+Communication and networking platform for community of practice - 2023
+'<p class="tots"><small><b>Global Multinational Professional Services Company</b></br><br/>
+<b>Client:     </b>M<br/>
+<b>Brief:     </b>lorem ipsum<br/>
+<b>Result:     </b>lorem ipsum</small></p>',
+
+### cerner practice mix
+Talent and Productivity forecast for the launch of new business practice - 2022
+'<p class="tots"><small><b>S</b></br><br/>
+<b>Client:     </b>M<br/>
+<b>Brief:     </b>lorem ipsum<br/>
+<b>Result:     </b>lorem ipsum</small></p>',
+
+### affordability
+Undergraduate Affordability Dashboard - loan and work contribution contextualization - 2021
+'<p class="tots"><small><b>S</b></br><br/>
+<b>Client:     </b>M<br/>
+<b>Brief:     </b>lorem ipsum<br/>
+<b>Result:     </b>lorem ipsum</small></p>',
+
+### presidio
 Presidio - 2019 - Data, Information Literacy, and Decision Making, Tableau
+'<p class="tots"><small><b>S</b></br><br/>
+<b>Client:     </b>M<br/>
+<b>Brief:     </b>lorem ipsum<br/>
+<b>Result:     </b>lorem ipsum</small></p>',
+
+### haas
 Haas - 2018
+'<p class="tots"><small><b>S</b></br><br/>
+<b>Client:     </b>M<br/>
+<b>Brief:     </b>lorem ipsum<br/>
+<b>Result:     </b>lorem ipsum</small></p>',
 
 ## left side
+
+### data volume
 Upload Volume Anomaly Detection Dashboard - 2024
+'<p class="tots"><small><b>S</b></br><br/>
+<b>Client:     </b>M<br/>
+<b>Brief:     </b>lorem ipsum<br/>
+<b>Result:     </b>lorem ipsum</small></p>',
+
+### data profile
 Data Profile Algorithm to test selection cases for migrating multiple legacy claims payer data to a harmonized cloud system - 2023
+'<p class="tots"><small><b>S</b></br><br/>
+<b>Client:     </b>M<br/>
+<b>Brief:     </b>lorem ipsum<br/>
+<b>Result:     </b>lorem ipsum</small></p>',
+
+### cio dashboard
 Capability Group Reorganization Dashboard - 2022
+'<p class="tots"><small><b>S</b></br><br/>
+<b>Client:     </b>M<br/>
+<b>Brief:     </b>lorem ipsum<br/>
+<b>Result:     </b>lorem ipsum</small></p>',
+
+### emissions
 Data Visualization Consulation for Professor of Public Health - storytelling, pattern recoginition, actionable answers - 2021
+'<p class="tots"><small><b>S</b></br><br/>
+<b>Client:     </b>M<br/>
+<b>Brief:     </b>lorem ipsum<br/>
+<b>Result:     </b>lorem ipsum</small></p>',
 
+### cdvn
 CDVN - 2017
-
-
+'<p class="tots"><small><b>S</b></br><br/>
+<b>Client:     </b>M<br/>
+<b>Brief:     </b>lorem ipsum<br/>
+<b>Result:     </b>lorem ipsum</small></p>',

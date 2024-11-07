@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Floating UI Tutorial</title>
+    <style>
+      #tooltip {
+        display: none;
+        width: max-content;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #222;
+        color: white;
+        font-weight: bold;
+        padding: 5px;
+        border-radius: 4px;
+        font-size: 90%;
+      }
+      #floating {
+        position: absolute;
+        width: max-content;
+        top: 0;
+        left: 0;
+      }
+      #arrow {
+        position: absolute;
+        background: #222;
+        width: 8px;
+        height: 8px;
+        transform: rotate(45deg);
+      }
+    </style>
+    <!-- https://floating-ui.com/docs/tutorial -->
+  </head>
+  <body>
+    <button id="button" aria-describedby="tooltip">My button</button>
+    <div id="tooltip" role="tooltip">
+      My tooltip with more content
+      <div id="arrow"></div>
+    </div>
+    <!--     <script src="https://cdn.jsdelivr.net/npm/@floating-ui/core@1.6.8"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.6.11"></script> -->
+
+    <script type="module">
+      import {
+        computePosition,
+        flip,
+        shift,
+        offset,
+        arrow,
+        autoUpdate,
+        autoPlacement,
+      } from "https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.6.11/+esm";
+
+      const button = document.querySelector("#button");
+      const tooltip = document.querySelector("#tooltip");
+      const arrowElement = document.querySelector("#arrow");
+
+      function update() {
+        computePosition(button, tooltip, {
+          placement: "top",
+          middleware: [
+            offset(6),
+            flip(),
+            shift({ padding: 5 }),
+            arrow({ element: arrowElement }),
+          ],
+        }).then(({ x, y, placement, middlewareData }) => {
+          Object.assign(tooltip.style, {
+            left: `${x}px`,
+            top: `${y}px`,
+          });
+
+          // Accessing the data
+          const { x: arrowX, y: arrowY } = middlewareData.arrow;
+
+          const staticSide = {
+            top: "bottom",
+            right: "left",
+            bottom: "top",
+            left: "right",
+          }[placement.split("-")[0]];
+
+          Object.assign(arrowElement.style, {
+            left: arrowX != null ? `${arrowX}px` : "",
+            top: arrowY != null ? `${arrowY}px` : "",
+            right: "",
+            bottom: "",
+            [staticSide]: "-4px",
+          });
+        });
+      }
+
+      function showTooltip() {
+        tooltip.style.display = "block";
+        update();
+      }
+
+      function hideTooltip() {
+        tooltip.style.display = "";
+      }
+
+      [
+        ["mouseenter", showTooltip],
+        ["mouseleave", hideTooltip],
+        ["focus", showTooltip],
+        ["blur", hideTooltip],
+      ].forEach(([event, listener]) => {
+        button.addEventListener(event, listener);
+      });
+    </script>
+  </body>
+</html>
