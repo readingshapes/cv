@@ -1,5 +1,5 @@
 # tooltip text
-# 2024 timeline
+# 2025 timeline
 
 - Google: Multinational Technology Company
 - Cigna: Multinational Managed Healthcare Company
@@ -12,6 +12,8 @@
 - University of California Berkeley
 
 ## right side
+
+### AI Log Summary
 
 ### repair dashboard
 '<p class="tots"><small><b>Supplier Data Accuracy Dashboard</b></br><br/>
