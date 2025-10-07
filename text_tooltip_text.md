@@ -1,19 +1,28 @@
-# tooltip text
+# tooltip text  
+- 2024_timeline_post_v2js.html  
+
 # 2025 timeline
 
+- Verizon: Global Telecom Company
+- Astellas: International Pharmaceutical Company
+- Abbott Diabetes Care: International Med Tech Company
 - Google: Multinational Technology Company
 - Cigna: Multinational Managed Healthcare Company
 - Accenture: Global Multinational Professional Services Company
 - Premera: Not-for-profit Health Insurance Company
-- Professor of Public Health at UC Berkeley
-- Financial Aid Office at UC Berkeley
-- Presidio Graduate School
-- Haas School of Business at UC Berkeley
-- University of California Berkeley
+- Professor of Public Health at UC Berkeley: 
+- Financial Aid Office at UC Berkeley: 
+- Presidio Graduate School: 
+- Haas School of Business at UC Berkeley: 
+- University of California Berkeley: 
 
 ## right side
 
 ### AI Log Summary
+'<p class="tots"><small><b>Supplier Data Accuracy Dashboard</b></br><br/>
+<b>Client:     </b>Multinational Technology Company<br/>
+<b>Brief:     </b>lorem ipsum<br/>
+<b>Result:     </b>lorem ipsum</small></p>',
 
 ### repair dashboard
 '<p class="tots"><small><b>Supplier Data Accuracy Dashboard</b></br><br/>
@@ -55,6 +64,9 @@ Haas - 2018
 <b>Client:     </b>M<br/>
 <b>Brief:     </b>lorem ipsum<br/>
 <b>Result:     </b>lorem ipsum</small></p>',
+
+
+
 
 ## left side
 
